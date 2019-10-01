@@ -1,7 +1,7 @@
-# Name: YOUR NAME HERE 
-# Assignment title: ENTER ASSIGNMENT TITLE HERE.
-# Time to complete: ENTER YOUR TIME HERE.
-# Description: ENTER A DESCRIIPTION ABOUT WHAT YOUR CODE IS SUPPOSED TO DO HERE.
+# Name: Miles Van Denburg 
+# Assignment title: Lab 5 Part 2
+# Time to complete: 20 min
+# Description: The code cleans the scraped data from the National Weather Service by removing extra whitespace, lines, and inserts spaces/commas where needed bewteen capitalized words. 
 
 # -*- coding: utf-8 -*-
 # Keep the line above when running script
@@ -33,7 +33,10 @@ forecast_list = forecast.split('\n\n')
 
 # Loop through list to make string replacements to each item
 # Remove extra whitespaces or lines for a cleaner format
+# Separates Capitalized words and inserts a comma to separate the values
 for day in forecast_list:
     day = day.replace('\n',': ')
-    # add your code here
-    print day
+    day2 = day.replace("SunnyHigh", "Sunny, High")
+    day3 = day2.replace("thenChanceShowersHigh", "then Chance Showers, High")
+    day4 = day3.replace("ClearLow", "Clear, Low")
+    print day4
