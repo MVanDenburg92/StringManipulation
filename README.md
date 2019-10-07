@@ -1,5 +1,10 @@
 # Week 5: Ch. 8, Working with Strings
 ### Lab 6
+
+| Grade   	|      10/10     	|
+|----------	|:------------	|
+| **Comments** 	| Nice work! |
+
 This week there are three short scripts: one to capitalize portions of a string; one to parse and manipulate a multi-line string, and one to extract a portion of a string and return in a way that is more understandable.
 
 ------

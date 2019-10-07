@@ -36,6 +36,8 @@ forecast_list = forecast.split('\n\n')
 # Separates Capitalized words and inserts a comma to separate the values
 for day in forecast_list:
     day = day.replace('\n',': ')
+    # You don't necessarily have to create new variables for replacements
+    # You can update the existing string
     day2 = day.replace("SunnyHigh", "Sunny, High")
     day3 = day2.replace("thenChanceShowersHigh", "then Chance Showers, High")
     day4 = day3.replace("ClearLow", "Clear, Low")
